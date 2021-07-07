@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				width: 500px;
+				height: 600px;
+				margin: auto;
+				position: absolute;
+				top: 100px;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				padding:100px;
+                background-color: rgb(238, 210, 54);
+			}
+			.container{
+				text-align: center;
+                position: relative;
+				width: 100%;
+				min-height:420px;
+				background:url(../img/10.jpg);
+				background-repeat: round;
+			}
+			h1{
+				width: 400px;
+				height: 70px;
+				color:white;
+				text-align: center;
+			}
+			ul{
+				list-style: none;
+				float: right;
+				margin-right: 0px;
+				margin-bottom: 0px;
+                padding-top: -300px;
+			}
+			.big{
+				width: 500px;
+				height: 500px;
+				border: 1px dashed gray;
+				border-radius: 5px;
+				box-shadow: 2px 2px 5px gray;
+				position: absolute;
+				top:50px;
+				left: -50px;
+				display: none;
+            }
+			.small{
+				width: 45px;
+				height: 45px;
+				border-radius: 50%;
+				box-shadow: 2px 2px 5px #808080;
+				opacity: 0.4;
+			}
+			.bi{
+				width: 500px;
+				height: 500px;
+				border: 1px dashed gray;
+				border-radius: 5px;
+				box-shadow: 2px 2px 5px gray;
+				position: absolute;
+				top:50px;
+				left: -50px;
+				display: block;
+			}
+			.smal{
+				width: 45px;
+				height: 45px;
+				border-radius: 50%;
+				box-shadow: 2px 2px 5px #808080;
+				opacity: 1;
+			}
+			.container .small:hover+.big{
+				display: block;
+			}
+			
+			.one{
+				opacity: 1;
+			}
+			
+			.container ul:hover .small{
+				opacity: 0.4;
+			}
+			.container ul li .small:hover{
+				opacity: 1;
+			}
+			#div3{
+				margin-top: 160px;
+				margin-left: 150px;
+			}
+			button{
+                width: 30%;
+                height: 50px;
+                background-color: rgb(189, 160, 0);
+                font-size:20px;
+                color: white;
+                border-color: white;
+            }
+			
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>这里是秋天哦！</h1>
+			<ul>
+                <li>
+					<img src="./秋/1.jpg" class="smal" />
+					<img src="./秋/1.jpg" class="bi"/>
+				</li>
+				<li>
+					<img src="./秋/2.jpg" class="small" />
+					<img src="./秋/2.jpg" class="big"/>
+				</li>
+				<li>
+					<img src="./秋/3.jpg" class="small" />
+					<img src="./秋/3.jpg" class="big"/>
+				</li>
+				<li>
+					<img src="./秋/4.jpg" class="small" />
+					<img src="./秋/4.jpg" class="big"/>
+				</li>
+                <li>
+					<img src="./秋/5.jpg" class="small" />
+					<img src="./秋/5.jpg" class="big"/>
+				</li>
+				<li>
+					<img src="./秋/6.jpg" class="small" />
+					<img src="./秋/6.jpg" class="big"/>
+				</li>
+                <li>
+					<img src="./秋/7.jpg" class="small" />
+					<img src="./秋/7.jpg" class="big"/>
+				</li>
+				<li>
+					<img src="./秋/8.jpg" class="small" />
+					<img src="./秋/8.jpg" class="big"/>
+				</li>
+				<li>
+					<img src="./秋/9.jpg" class="small" />
+					<img src="./秋/9.jpg" class="big"/>
+				</li>
+			</ul>
+		</div>
+		<div id="div3">
+			<a href="file:///D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/7.7%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE2.0.html">
+				<button>返回首页</button>
+			</a>
+		</div>
+	</body>
+</html>

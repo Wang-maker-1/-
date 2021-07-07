@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                text-align: center;
+                font-size: large;
+                margin: auto;
+                line-height: 50px;
+            }
+            select{
+                display: inline-block;
+                width: 165px;
+            }
+            body{
+                background-color:yellow;
+                color: black;
+            }
+            #butt{
+                background-color:skyblue;
+                border: white solid;
+                height: 30px;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div>
+        <h1>请填写以下信息方便沟通</h1>
+        您的姓名：<input type="text" value="张三"><br>
+        您的性别：<input type="text" value="男"><br>
+        选择地点：
+        <select>
+            <option value="海曙区">海曙区</option>
+            <option value="江北区">江北区</option>
+            <option value="北仑区">北仑区</option>
+            <option value="镇海区">镇海区</option>
+            <option value="鄞州区">鄞州区</option>
+            <option value="奉化区">奉化区</option>
+            <option value="余姚市">余姚市</option>
+            <option value="慈溪市">慈溪市</option>
+            <option value="象山县">象山县</option>
+            <option value="宁海县">宁海县</option>
+        </select><br>
+        您的出价：<input type="text" value="500元以内"><br>
+        您的要求：<textarea>需要拍满八小时以上，至少出片20张</textarea> 
+        <br><button onclick="tijiao()" id="butt">提交信息至微博联系后续</button>
+    </div>
+        <script>
+            function tijiao(){
+                window.location.href='https://weibo.com/u/6124479953';
+            }
+        </script>
+    </body>
+</html>

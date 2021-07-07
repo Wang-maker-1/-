@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>这个网站姓王名浩</title>
+    <style>
+        #first {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            position: sticky;
+            border: black solid 2px;
+            height: 350px;
+            background-image: url(./页头.png);
+            background-repeat: round;
+        }
+
+        #div1 {
+            height: 600px;
+            background-image: url(./黑夜3.jpg);
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding: 0px;
+            background-size: 100%;
+            position: sticky;
+        }
+
+        #img1 {
+            width: 100%;
+            margin: 0;
+            padding-bottom: -10px;
+        }
+
+        #div2 {
+            background-image: url(./搜索选项2.png);
+            background-size: 100%;
+            height: 810px;
+            top: 0px;
+            margin: 0;
+            margin-bottom: 0;
+            position: sticky;
+        }
+
+        #div3 {
+            background-image: url(./微信开屏.png);
+            background-size: 100%;
+            height: 810px;
+            top: 0px;
+            margin: 0;
+            text-align: left;
+            border: black solid 0px;
+            position: sticky;
+            color: white;
+        }
+
+        #div4 {
+            background-image: url(./QQ.jpg);
+            background-size: 100%;
+            height: 810px;
+            margin: 0;
+            top: 0px;
+            text-align: left;
+            border: black solid 0px;
+            position: sticky;
+        }
+
+        #div5 {
+            background-image: url(./B站.jpg);
+            background-size: 100%;
+            height: 850px;
+            margin: 0;
+            top: 0px;
+            text-align: left;
+            border: black solid 0px;
+            position: sticky;
+        }
+
+        #div6 {
+            background-image: url(./新浪微博.png);
+            background-size: 100%;
+            height: 810px;
+            top: 0px;
+            margin: 0;
+            text-align: left;
+            border: black solid 0px;
+            position: sticky;
+        }
+
+        select {
+            height: 50px;
+            width: 20%;
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            display: line;
+            float: inline-start;
+            margin-top: 0;
+            padding-top: -50px;
+            background-color: black;
+            color: white;
+        }
+
+        #dj {
+            color: black;
+            display: inline;
+            height: 40px;
+            border-radius: 50px;
+            background-color: white;
+            border: white;
+            margin: 0;
+        }
+
+        .search {
+            width: 20px;
+            height: 40px;
+            border-radius: 50px;
+            outline: none;
+            border: 1px solid rgb(255, 255, 255);
+            position: relative;
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+            padding: 70px 0;
+        }
+
+        .search:checked,
+        .search:focus {
+            color: rgb(39, 39, 39);
+            position: relative;
+            width: 50%;
+            transition: 2s;
+        }
+
+        #p1 {
+            font-size: 100px;
+            padding-top: 50px;
+            margin-left: 30px;
+            margin-top: 0%;
+            display: inline-block;
+            color: black;
+        }
+
+        #p2 {
+            font-size: 50px;
+            display: inline-block;
+            margin-top: 0;
+            margin-left: 30px;
+            padding-top: -50px;
+            color: black;
+
+        }
+
+        #chat {
+            height: 30%;
+            display: block;
+            float: right;
+            margin-right: 20px;
+        }
+
+        #QQ {
+            height: 30%;
+            display: block;
+            float: right;
+            margin-left: 20px;
+        }
+
+        #p3 {
+            font-size: 80px;
+            padding-top: 50px;
+            margin-left: 30px;
+            margin-top: 0%;
+            display: block;
+            color: black;
+        }
+
+        #p4 {
+            font-size: 80px;
+            padding-top: 50px;
+            margin-left: 30px;
+            margin-top: 0%;
+            display: block;
+            color: white;
+        }
+
+        #BL {
+            height: 40%;
+            display: block;
+            float: right;
+            margin-left: 20px;
+        }
+
+        #p5 {
+            font-size: 80px;
+            padding-top: 50px;
+            margin-left: 30px;
+            margin-top: 0%;
+            display: block;
+            color: black;
+        }
+
+        #wb {
+            height: 30%;
+            display: block;
+            float: right;
+            margin-left: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: auto;
+            position: sticky;
+            background-color: black;
+        }
+
+        li {
+            float: left;
+            text-align: center;
+            width: 25%;
+        }
+
+        a {
+            width: 80px;
+            height: 30px;
+            padding: 20px 100px 20px 100px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            display: block;
+            margin: auto;
+            text-decoration: none;
+        }
+
+        #adiv {
+            text-align: center;
+        }
+
+        #tu {
+            color: black;
+            display: inline;
+            height: 40px;
+            border-radius: 50px;
+            background-color: white;
+            border: white;
+            margin: 0;
+        }
+
+        #div0 {
+            width: 5%;
+            height: 5%;
+        }
+
+        #tiao1 {
+            background-color: white;
+            width: 0px;
+            height: 0px;
+            position: relative;
+            display: inline;
+            padding: 10px;
+            margin-left: 180px;
+            
+        }
+        #tiao2 {
+            background-color: white;
+            width: 0px;
+            height: 0px;
+            position:  relative;
+            display: inline;
+            padding: 10px;
+            margin-left: 100px;
+            
+        }
+        #tiao3 {
+            background-color: white;
+            width: 0px;
+            height: 0px;
+            position: relative;
+            display: inline;
+            padding: 10px;
+            margin-left: 100px;
+        }
+        #tiao4 {
+            background-color: white;
+            width: 0px;
+            height: 0px;
+            position:  relative;
+            display: inline;
+            padding: 10px;
+            margin-left: 100px;
+            margin-right: 150px;
+        }
+
+        #zhao {
+            width: 200px;
+            height: 200px;
+        }
+        #divb{
+            margin-top: 200px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="first">
+    </div>
+    <div id="div1">
+        <ul class="u1">
+            <li><a href="#" target="_blank">首页</a></li>
+            <li><a href="https://www.bilibili.com/video/BV1sK411K7Fp/" target="_blank">摄影教程</a></li>
+            <li><a href="file:///D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E4%B8%83%E6%9C%88%E8%A1%8C%E7%A8%8B.html"
+                    target="_blank">近期行程</a></li>
+            <li><a href="file:///D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E7%BA%A6%E6%8B%8D%E7%94%B3%E8%AF%B7.html" target="_blank">找我预约</a></li>
+        </ul>
+    </div>
+    <!--
+        <select>
+                <option value="主页">主页</option>
+            </select>
+            <select onchange="javascript:window.open(this.options[this.selectedIndex].value)"            >
+                <option value="摄影记录">摄影记录</option>
+                <option value="file:///D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E6%98%A5%E6%97%A5%E6%91%84%E5%BD%B1.html">春日摄影</span></option>
+                <option value="file:///D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E5%A4%8F%E6%97%A5%E6%91%84%E5%BD%B1.html">夏日摄影</option>
+                <option value="file:///D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E7%A7%8B%E6%97%A5%E6%91%84%E5%BD%B1.html">秋日摄影</option>
+                <option value="file:///D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E5%86%AC%E6%97%A5%E6%91%84%E5%BD%B1.html">冬日摄影</option>
+            </select>
+            <select onchange="javascript:window.open(this.options[this.selectedIndex].value)">
+                <option value="日期">未来行程</option>
+                <option value="file:///D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E4%B8%83%E6%9C%88%E8%A1%8C%E7%A8%8B.html">辛丑七月</option>
+                <option value="file:///D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E5%85%AB%E6%9C%88%E8%A1%8C%E7%A8%8B.html">辛丑八月</option>
+                <option value="no_dong">以后再说</option>
+            </select>
+            <select onchange="javascript:window.open(this.options[this.selectedIndex].value)">
+                <option value="yue">预约拍摄</option>
+                <option value="file:///D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E6%9D%AD%E5%B7%9E%E5%A1%AB%E6%8A%A5.html">杭州</option>
+                <option value="file:///D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E5%AE%81%E6%B3%A2%E5%A1%AB%E6%8A%A5.html">宁波</option>
+                <option value="file:///D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E5%85%B6%E4%BB%96%E5%A1%AB%E6%8A%A5.html">其他地区</option>
+            </select> -->
+    </div>
+    <div id="div2">
+        <form action="" class="parent">
+            <input type="text" class="search" value=输入搜索>
+            <button id="dj"><a id="tu" target="_blank"
+                    href="https://stock.tuchong.com/?source=extbaidukey10373&utm_source=extbaidukey10373&utm_term=sem_baidu_dc_tccy01&sdclkid=b5gpALfpxrDixOq">找不到？点击去图虫</a></button>
+        </form>
+
+        <div id="divb" >
+            <div style="float: left;">
+                <a id="tiao1" href="file:///D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E6%98%A5%E6%97%A5%E6%91%84%E5%BD%B1.html"><img id="zhao" src="./春/1.jpg" alt="春"></a>
+            </div>
+            <div style="float: left;">
+                <a id="tiao2" href="file:///D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E5%A4%8F%E6%97%A5%E6%91%84%E5%BD%B1.html"><img id="zhao" src="./夏/1.jpg" alt="春"></a>
+            </div>
+            <div style="float: left;">
+                <a id="tiao3" href="file:///D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E7%A7%8B%E6%97%A5%E6%91%84%E5%BD%B1.html"><img id="zhao" src="./秋/1.jpg" alt="春"></a>
+            </div>
+            <div style="float: left;">
+                <a id="tiao4" href="file:///D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E5%86%AC%E6%97%A5%E6%91%84%E5%BD%B1.html"><img id="zhao" src="./冬/8.jpg" alt="春"></a>
+            </div>
+        </div>
+    </div>
+    <div id="div3">
+        <p id="p1">微信</p><br>
+        <p id="p2">让你更了解我的生活</p>
+        <img id="chat" src="./微信.jpg">
+    </div>
+    <div id="div4">
+        <p id="p3">QQ<br>等你来<br>找我聊天</p>
+        <img id="QQ" src="./QQ二维码.jpg">
+    </div>
+    <div id="div5">
+        <p id="p4">BiliBili<br>快来<br>一键三连！</p>
+        <img id="BL" src="B站二维码.jpg">
+    </div>
+    <div id="div6">
+        <p id="p5">微博<br>在这里寻找<br>热爱的话题！</p>
+        <img id="wb" src="微博二维码.jpg">
+    </div>
+</body>
+
+</html>
