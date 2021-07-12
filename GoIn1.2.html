@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           /* @keyframes bgv{
+			100%{
+				opacity: 0;
+                visibility: hidden;
+			}
+		}
+		    .tran{
+			position: absolute;
+			animation: bgv 3s;
+            animation-delay: 88s;
+            animation-fill-mode:forwards;
+            z-index: 10;
+		}*/
+            body{
+                background-color: black;
+                text-align: center;
+                margin: 0px;
+            }
+            #game1{
+                background-image: url(./素材/图片素材/sr001.gif);
+                background-size: 100%;
+                margin: auto;
+                height: 100vh;
+                width: auto;
+                position: sticky;
+                top: 0px;
+                display: block;   
+                z-index: 5;            
+            }
+            .startBtn{
+                color:white;
+                font-size: 20px;
+                border-radius: 30px;
+                background-image: url(./素材/图片素材/IT科技风宇宙星球动态引导关注.gif);
+                background-position: right;
+                width: 300px;
+                height: 50px;
+                position:sticky;
+                margin: auto;
+                outline:none;
+                border: rgb(64, 147, 224) solid 3px;
+                top: 200px;
+                transition: 2s;
+            }
+            .startBtn:hover{
+                background-color: turquoise;
+                width: 600px;
+                border-radius: 60px;
+                height: 100px;
+                font-size: 40px;
+                transition: 2s;
+            }
+            #game2{
+                display: none;
+                text-align: center;
+            }
+            #game3{
+                display: none;
+                text-align: center;
+            }
+
+            .ti h1{
+                color: white;
+                border-radius: 20%;
+                margin-top: 100px;
+                margin-left: 50px;
+                margin-right: 50px;
+                line-height: 60px;
+                width: 70%;
+                position: relative;
+                top: 120px;
+                margin: auto;
+            }
+            .ti{
+                text-align: center;
+                background: url(./素材/图片素材/11.jpg);
+                background-size: 100%;
+                background-repeat: round;
+                margin: auto;
+                height: 100vh;
+                width: 100%;
+                position:sticky;
+                top: 0px;
+                display:none;
+                z-index: 5;
+            }
+            .No1{
+               text-decoration: none;
+               background-color: black;
+               color: white;
+               width: 20%;
+               height: 20px;
+               display: block;
+               float: left;
+            }
+            .ti button{
+                background-image: url(./素材/图片素材/qian.jpg);
+                background-repeat: round;
+                color: white;
+                border-radius: 25%;
+                height: 160px;
+                width: 160px;
+                margin-top: 200px;
+                transition: 1.8s;
+                font-size: 16px;
+                font-weight: bold;
+                border: rgb(30, 112, 219);
+                margin-left: 100px;
+                margin-right: 100px;
+                outline:none;
+                padding: 5px;
+                text-shadow: 5px 5px 5px black;
+                z-index: 12;
+                border: white solid 5px;
+            }
+            .ti button:hover{
+                background-image: url(./素材/图片素材/hou.jpg);
+                background-repeat: round;
+                height: 210px;
+                width: 210px;
+                transition: 1.8s;
+                font-size: 21px;
+                border-radius: 10%;
+            }
+            #nx10{
+                background-image: url(./素材/图片素材/qian.jpg);
+                background-repeat: round;
+                color: white;
+                border-radius: 25%;
+                height: 180px;
+                width: 180px;
+                margin-top: 200px;
+                transition: 2s;
+                font-size: 20px;
+                border: rgb(30, 112, 219);
+                margin-left: 100px;
+                margin-right: 100px;
+                outline:none;
+                padding: 5px;
+                border: white solid 5px;
+            }
+            #nx10:hover{
+                background-image: url(./素材/图片素材/hou.jpg);
+                background-repeat: round;
+                height: 200px;
+                width: 200px;
+                transition: 1.8s;
+                font-size: 25px;
+                border-radius: 10%;
+            }
+            #xf{
+                height: 80px;
+                width: 80px;
+                font-size: 16px;
+                border-radius: 50px;
+                border: white solid 3px;
+                float:right;
+                right: 5px;
+                bottom: 0px;
+                color:white;
+                margin: auto;
+                text-align: center;
+                top: 0px;
+                position:fixed;
+                display: none;
+                z-index: 11;
+                background-image: url(./素材/图片素材/hou.jpg);
+            }
+            #fs{
+                height: 260px;
+                width: 240px;
+                font-size: 20px;
+                border-radius: 10px;
+                float:left;
+                line-height: 50px;
+                left: 3px;
+                top:0px;
+                color:white;
+                margin: auto;
+                margin-top: 20px;
+                padding: 10px;
+                text-align: center;
+                display: none;
+                position:fixed;
+                z-index: 15;
+                margin-left: 20px;
+                border:white solid 5px;        
+            }
+            #luo{
+                float: right;
+                position:fixed;
+                z-index: 10;
+                padding: 0%;
+                right: 3%;
+                height:40%;
+                width: 20%;
+                bottom: 100px;
+                opacity: 0;
+            }
+            #guo{
+                background-color:rgba(0, 0, 0, 0.5);
+                height: 80px;
+                width: 160px;
+                font-size: 15px;
+                border-radius: 10px;
+                float:right;
+                line-height: 50px;
+                right: 3px;
+                top:0px;
+                color:white;
+                margin: auto;
+                margin-top: 20px;
+                padding: 10px;
+                text-align: center;
+                position:fixed;
+                z-index: 15;
+                margin-left: 20px;
+                border:white solid 3px;    
+            }
+        </style>
+    </head>
+    <body>
+        <div id=div1 class="tran">
+            <!--<video src="./素材/视频素材/合成 1.mp4" type="video/mp4" autoplay="autoplay" loop="loop"  height="100%" width="100%" id="vid"></video>-->
+            <!--<embed src="./素材/音乐素材/所念皆星河.mp3" width="0px" height="0px" id="bgm" loop="true" autoplay="autoplay">-->
+            <!--<button id="guo" onclick="guo()">
+                跳过动画
+            </button>-->
+        </div>  
+		<div id="game1">
+			<button class="startBtn" onclick="start()">测测你和罗辑有多像</button>
+		</div>
+        <div id="luo">
+            <img src="./素材/图片素材/罗辑.png" alt="罗辑">
+        </div>
+        <div id="dati1" class="ti">
+            <br><h1 style="cursor:default">网上突然爆出三体人要来地球的消息<br>你心想：</h1>
+            <button onclick="cuo()" class="butf1">什么外星人<br>我才不信外星人</button>
+            <button id="nx1" onclick="next()">和我有什么关系<br>反正都要被统治</button>
+            <button onclick="cuo()"class="butf1">我想知道外星人<br>长得什么样子</button>
+            <button onclick="cuo()"class="butf1">救命<br>我得赶紧跑</button>
+        </div>
+        <div id="dati2" class="ti">
+            <br><h1 style="cursor:default">三体人真的来了地球并觉得你很聪明<br>希望你能帮助他们殖民地球，许诺给你超人类的待遇，此时你：</h1>
+            <button onclick="cuo()" class="butf2">宁死不屈<br>选择告诉人类</button>
+            <button onclick="cuo()" class="butf2">消灭人类暴政<br>世界属于三体</button>
+            <button onclick="cuo()">摇摆不决<br>一直在考虑利害</button>
+            <button id="nx2" onclick="next()">表面答应<br>实际在筹备计划</button>
+        </div>
+        <div id="dati3" class="ti">
+            <br><h1 style="cursor:default">你还没有实施计划，三体文明已经占领了地球<br>你和一部分人类来到了太空站，却发现物资明显不够此时你会：</h1>
+            <button id="nx3" onclick="next()">失人性失去很多<br>失兽性失去一切</button>
+            <button onclick="cuo()">选择自己离开<br>寻找其他星球</button>
+            <button onclick="cuo()">向三体反抗<br>组织防卫军</button>
+            <button onclick="cuo()">带领其他人逃离<br>飞往其他星球</button>
+        </div>
+        <div id="dati4" class="ti">
+            <br><h1 style="cursor:default">你选择消灭同类的行为被其他人类知道了<br>人类成立了法庭要审判你，此时你：</h1>
+            <button onclick="cuo()">一不做二不休<br>暴力反抗法庭</button>
+            <button onclick="cuo()">趁着空隙<br>马上逃离地球</button>
+            <button id="nx4" onclick="next()">高处不胜寒<br>选择默不作声</button>
+            <button onclick="cuo()">认真悔过<br>争取量刑</button>
+        </div>
+        <div id="dati5" class="ti">
+            <br><h1 style="cursor:default">你的反击武器——利用核弹威慑已经完成<br>此时你：</h1>
+            <button onclick="cuo()">放弃反击<br>让人类自生自灭</button>
+            <button id="nx5" onclick="next()">拿生命作为按钮<br>威胁三体世界</button>
+            <button onclick="cuo()">立马引爆核弹<br>完成反击</button>
+            <button onclick="cuo()">将这个武器<br>交给人类</button>
+        </div>
+        <div id="dati6" class="ti">
+            <br><h1 style="cursor:default">你成功对三体世界进行了威慑<br>此时你：</h1>
+            <button onclick="cuo()">拒绝担任执剑人<br>将按钮交给人类</button>
+            <button id="nx6" onclick="next()">自始至终都自己<br>控制两个世界</button>
+            <button onclick="cuo()">选择执剑人<br>替代自己的位置</button>
+            <button onclick="cuo()">接受程心作为<br>下一任执剑人</button>
+        </div>
+        <div id="dati7" class="ti">
+            <br><h1 style="cursor:default">因为你的威慑,三体人只能继续被三个恒星折磨<br>这时你的感觉是：</h1>
+            <button id="nx7" onclick="next()">黑暗森林<br>法则不能被打破</button>
+            <button onclick="cuo()">感到后悔<br>世界不能缺少爱</button>
+            <button onclick="cuo()">希望能在地球<br>留些给三体人</button>
+            <button onclick="cuo()">非常纠结<br>陷入自责与无助</button>
+        </div>
+        <div id="dati8" class="ti">
+            <br><h1 style="cursor:default">当你得知执剑人的位置被程心替代时<br>此时你会：</h1>
+            <button onclick="cuo()">拒绝程心代自己<br>选择威胁人类</button>
+            <button id="nx8" onclick="next()">坦然接受<br>深表无奈与惋惜</button>
+            <button onclick="cuo()">奋力反抗<br>但尊重人类选择</button>
+            <button onclick="cuo()">进行谈判<br>获得更好的解决</button>
+        </div>
+        <div id="dati9" class="ti">
+            <br><h1 style="cursor:default">人类在太阳系各个行星建立了居住地<br>你会选择以下哪个职业：</h1>
+            <button onclick="cuo()">太阳系学院<br>宇宙社会学教授</button>
+            <button id="nx9" onclick="next()">地球文明博物馆<br>工程委员会主席</button>
+            <button onclick="cuo()">成立公司<br>研究文明的未来</button>
+            <button onclick="cuo()">无所事事<br>虚度终生</button>
+        </div>
+        <div id="dati10" class="ti">
+            <br><h1 style="cursor:default">有以下办法抵挡人类即将面临的灾难<br>此时你会：</h1>
+            <button onclick="cuo1()">开展掩体计划<br>制造太空城</button>
+            <button id="nx10" onclick="next01()">研究曲率驱动<br>制造光速飞船</button>
+            <button onclick="cuo1()">研究黑域<br>锁住人类发展</button>
+            <button onclick="cuo1()">自我毁灭<br>回到原始社会</button>
+        </div>
+        
+        <div id="xf">
+            <p id="xf2">向下滑动<br>查看错题</p>
+        </div>
+        <div id="fs">
+            <p id="wcwd">你当前完成的测试进度为：1/10</p>
+            <p id="fswd">你当前与罗辑的匹配度为：0%</p>
+        </div>
+
+        <div id="dati11" class="ti">
+            <br><h1>点击查看你与罗辑的匹配程度</h1>
+            <button id="nx10" onclick="next11()">查看</button>
+        </div>
+
+
+
+        <div id="game3" class="ti">
+			<h1>你和罗辑的匹配度为：<span id="score">100</span></h1><br>
+            <h1>你有如下选择：</h1>
+            <button class="reStart" onclick="again()">重新开启人生</button>
+            <button class="reStart" onclick="zhuan1()">查看性格匹配</button>
+            <button class="reStart" onclick="b3()">回顾答错题目</button>
+		</div>
+        <script>
+            var numT=0;
+            var numM=0;
+            var jd=1;
+            var is=0;
+            var a=document.getElementsByClassName("ti");
+            var wcwd=document.getElementById("wcwd");
+            var word=document.getElementById("fswd");
+            var luo=document.getElementById("luo");
+            var fs=document.getElementById("fs");
+            var vid1=document.getElementById("vid");
+            function start(){
+                a[0].style.display="block";
+                var b=document.getElementById("game1");
+                b.style.display="none";
+                fs.style.display="block";
+                vid1.muted="muted";
+            }
+            function guo(){
+                var g1=document.getElementById("div1");
+                g1.style.display="none";
+                vid1.muted="muted";
+
+            }
+            function next(){
+                a[numM].style.display="none";
+                a[numM+1].style.display="block";
+                numT=numT+10;
+                numM++;
+                jd++;
+                var n=0;
+                luo.style.opacity=numT/100;
+                word.innerHTML="你当前与罗辑的匹配度为："+numT+"%";
+                wcwd.innerHTML="你当前完成的测试题目为："+jd+"/10";
+            }
+            function next01(){
+                a[numM].style.display="none";
+                a[numM+1].style.display="block";
+                numT=numT+10;
+                numM++;
+                jd++;
+                var n=0;
+                fs.style.display="none";
+                luo.style.opacity=numT/100;
+                word.innerHTML="你当前与罗辑的匹配度为："+numT+"%";
+                wcwd.innerHTML="你当前完成的测试题目为："+jd+"/10";
+               
+            }
+            function next11(){
+                a[10].style.display="none";
+                a[11].style.display="block";
+                document.getElementById("score").innerHTML=numT+'%';
+                myVid=document.getElementById("vid");
+                myVid.muted=true;
+            }
+            function cuo(){
+                /*alert("对不起，您的选择不像是罗辑做出的，点击确定探索之后的故事")*/
+                a[numM+1].style.display="block";
+                var clientHeight=0;
+                if(document.compatMode==='BackCompat'){
+                    clientHeight=document.body.clientHeight;
+                }else{
+                    clientHeight=document.documentElement.clientHeight
+                }
+                jd++;
+                wcwd.innerHTML="你当前完成的测试进度为："+(jd)+"/10";
+                window.scrollTo(0,clientHeight*(++numM))
+                
+                if(is<1&&jd>5&&numT<=30){
+                    is=is+1;        
+                    alert("游戏马上就要结束，您和罗辑先生的匹配度较低，需要仔细思考哦！")   
+                        }
+                    }
+            function cuo1(){
+                a[numM+1].style.display="block";
+                fs.style.display="none";
+                var clientHeight=0;
+                if(document.compatMode==='BackCompat'){
+                    clientHeight=document.body.clientHeight;
+                }else{
+                    clientHeight=document.documentElement.clientHeight
+                }
+                window.scrollTo(0,clientHeight*(++numM))
+            }
+            function zhuan1(){
+                if (numT>=50)
+                {window.location.href="";}
+                else{
+                    window.location.href="";
+                }}
+            function b3(){
+                window.scrollTo(0,0)
+                var xuan=document.getElementById("xf");
+                xuan.style.display="block";
+                fs.style.display="none";
+                luo.style.display="none";
+            }
+            function again(){
+                location.reload();
+            }
+        </script>
+        </body>
+</html>
